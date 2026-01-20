@@ -242,7 +242,7 @@ export default function ContactPage() {
               <div>
                 <p className="font-semibold text-gray-900">Q. 기고나 협업이 가능한가요?</p>
                 <p className="text-gray-700">
-                  A. 게임 관련 전문 지식을 가지고 계신 분의 기고를 환영합니다. 
+                  A. 관련 전문 지식을 가지고 계신 분의 기고를 환영합니다. 
                   협업 제안은 위 양식이나 이메일을 통해 문의해주세요.
                 </p>
               </div>

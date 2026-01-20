@@ -48,7 +48,7 @@ export default function SearchPage() {
       </div>
 
       <div className="mb-12">
-        <h1 className="text-4xl font-bold mb-4 text-gray-900">게시글 검색</h1>
+        <h1 className="text-4xl font-bold mb-4 text-gray-900">콘텐츠 검색</h1>
         <p className="text-xl text-gray-600 leading-relaxed">
           원하는 정보를 빠르게 찾아보세요
         </p>
@@ -94,7 +94,7 @@ export default function SearchPage() {
             </p>
             <div className="flex flex-wrap gap-2 justify-center">
               <span className="text-sm text-gray-500">추천 키워드:</span>
-              {['FPS', '가이드', '전략', '리뷰', '초보자'].map(keyword => (
+              {['가이드', '튜토리얼', '전략', '리뷰', '초보자'].map(keyword => (
                 <Badge 
                   key={keyword}
                   variant="secondary"
@@ -118,7 +118,7 @@ export default function SearchPage() {
           </p>
           <div className="flex flex-wrap gap-2 justify-center">
             <span className="text-sm text-gray-500">인기 검색어:</span>
-            {['FPS 가이드', 'MOBA 공략', '모바일 게임', '하드웨어', 'e스포츠'].map(keyword => (
+            {['초보자 가이드', '실전 노하우', '리뷰', '튜토리얼', '팁'].map(keyword => (
               <Badge 
                 key={keyword}
                 variant="secondary"
@@ -134,19 +134,13 @@ export default function SearchPage() {
 
       {/* 전체 카테고리 링크 */}
       <div className="mt-16 pt-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">카테고리별로 찾아보기</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-          {[
-            { name: '가이드', slug: 'guide' },
-            { name: '공략', slug: 'strategy' },
-            { name: '리뷰', slug: 'review' },
-          ].map(cat => (
-            <Link key={cat.slug} href={`/category/${cat.slug}`}>
-              <div className="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 transition-colors cursor-pointer text-center">
-                <h3 className="font-semibold text-gray-900">{cat.name}</h3>
-              </div>
-            </Link>
-          ))}
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">카테고리로 찾아보기</h2>
+        <div className="flex justify-center max-w-2xl mx-auto">
+          <Link href="/category/content">
+            <div className="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 transition-colors cursor-pointer text-center w-48">
+              <h3 className="font-semibold text-gray-900">가이드</h3>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

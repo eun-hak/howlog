@@ -107,8 +107,8 @@ export default async function CategoryPage({ params }: PageProps) {
                     <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
                         <h3 className="font-bold text-gray-900 mb-4">{category.name} 소개</h3>
                         <p className="text-sm text-gray-600 leading-relaxed">
-                            {category.name} 아카이브에 오신 것을 환영합니다. 여기서는 {category.slug}와 관련된 모든 글, 가이드, 튜토리얼을 찾을 수 있습니다.
-                            이 섹션은 매주 새로운 콘텐츠로 업데이트됩니다.
+                            {category.description} 실용적인 가이드와 노하우를 통해 도움을 드립니다.
+                            이 섹션은 정기적으로 새로운 콘텐츠로 업데이트됩니다.
                         </p>
                     </div>
                 </div>
