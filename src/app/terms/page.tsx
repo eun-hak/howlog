@@ -13,7 +13,7 @@ export default function TermsPage() {
       {/* Breadcrumb */}
       <div className="mb-8">
         <div className="flex items-center text-sm text-gray-500">
-          <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+          <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
           <ChevronRight className="h-4 w-4 mx-1" />
           <span className="font-medium text-gray-900">이용약관</span>
         </div>
@@ -202,7 +202,7 @@ export default function TermsPage() {
           <h3 className="font-bold text-lg mb-2 text-gray-900">부칙</h3>
           <p className="text-sm text-gray-600">본 약관은 2025년 1월 1일부터 시행됩니다.</p>
           <p className="text-sm text-gray-600 mt-2">
-            이용약관에 대한 문의사항이 있으시면 <Link href="/contact" className="text-indigo-600 underline font-semibold">문의하기</Link> 페이지를 통해 연락해 주시기 바랍니다.
+            이용약관에 대한 문의사항이 있으시면 <Link href="/contact" className="text-orange-600 underline font-semibold">문의하기</Link> 페이지를 통해 연락해 주시기 바랍니다.
           </p>
         </div>
       </article>

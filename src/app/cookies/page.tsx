@@ -13,7 +13,7 @@ export default function CookiesPage() {
       {/* Breadcrumb */}
       <div className="mb-8">
         <div className="flex items-center text-sm text-gray-500">
-          <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+          <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
           <ChevronRight className="h-4 w-4 mx-1" />
           <span className="font-medium text-gray-900">쿠키 정책</span>
         </div>
@@ -151,7 +151,7 @@ export default function CookiesPage() {
             다만, 쿠키를 차단할 경우 일부 서비스 이용에 제한이 있을 수 있습니다.
           </p>
           
-          <div className="bg-indigo-50 border border-indigo-100 p-6 rounded-lg mb-4">
+          <div className="bg-orange-50 border border-orange-100 p-6 rounded-lg mb-4">
             <h3 className="font-semibold mb-3 text-gray-900">주요 브라우저별 쿠키 설정 방법</h3>
             <ul className="space-y-2 text-gray-700 text-sm">
               <li><strong>Chrome:</strong> 설정 &gt; 개인정보 및 보안 &gt; 쿠키 및 기타 사이트 데이터</li>

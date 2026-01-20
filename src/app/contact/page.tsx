@@ -54,7 +54,7 @@ export default function ContactPage() {
       {/* Breadcrumb */}
       <div className="mb-8">
         <div className="flex items-center text-sm text-gray-500">
-          <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+          <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
           <ChevronRight className="h-4 w-4 mx-1" />
           <span className="font-medium text-gray-900">문의하기</span>
         </div>
@@ -71,10 +71,10 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         {/* Contact Info */}
         <div className="lg:col-span-1 space-y-6">
-          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-lg border border-indigo-100">
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-lg border border-orange-100">
             <div className="flex items-center gap-3 mb-4">
-              <div className="bg-indigo-100 p-2 rounded-lg">
-                <Mail className="h-5 w-5 text-indigo-600" />
+              <div className="bg-orange-100 p-2 rounded-lg">
+                <Mail className="h-5 w-5 text-orange-600" />
               </div>
               <h3 className="font-bold text-gray-900">이메일</h3>
             </div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
             </p>
             <a 
               href="mailto:contact@howlog.jisiknarae.com" 
-              className="text-indigo-600 font-semibold hover:underline block"
+              className="text-orange-600 font-semibold hover:underline block"
             >
               contact@howlog.jisiknarae.com
             </a>
@@ -215,7 +215,7 @@ export default function ContactPage() {
             <Button 
               type="submit" 
               disabled={isSubmitting}
-              className="w-full md:w-auto bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-3 text-base"
+              className="w-full md:w-auto bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white px-8 py-3 text-base"
             >
               {isSubmitting ? (
                 <>처리 중...</>
@@ -261,21 +261,21 @@ export default function ContactPage() {
       <div className="border-t pt-8">
         <h2 className="text-2xl font-bold text-gray-900 mb-6">다른 연락 방법</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
+          <div className="p-4 border border-gray-200 rounded-lg hover:border-orange-300 transition-colors">
             <h3 className="font-semibold text-gray-900 mb-2">일반 문의</h3>
-            <a href="mailto:contact@howlog.jisiknarae.com" className="text-indigo-600 text-sm hover:underline">
+            <a href="mailto:contact@howlog.jisiknarae.com" className="text-orange-600 text-sm hover:underline">
               contact@howlog.jisiknarae.com
             </a>
           </div>
-          <div className="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
+          <div className="p-4 border border-gray-200 rounded-lg hover:border-orange-300 transition-colors">
             <h3 className="font-semibold text-gray-900 mb-2">개인정보 관련</h3>
-            <a href="mailto:contact@howlog.jisiknarae.com" className="text-indigo-600 text-sm hover:underline">
+            <a href="mailto:contact@howlog.jisiknarae.com" className="text-orange-600 text-sm hover:underline">
               contact@howlog.jisiknarae.com
             </a>
           </div>
-          <div className="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 transition-colors">
+          <div className="p-4 border border-gray-200 rounded-lg hover:border-orange-300 transition-colors">
             <h3 className="font-semibold text-gray-900 mb-2">제휴 및 협업</h3>
-            <a href="mailto:contact@howlog.jisiknarae.com" className="text-indigo-600 text-sm hover:underline">
+            <a href="mailto:contact@howlog.jisiknarae.com" className="text-orange-600 text-sm hover:underline">
               contact@howlog.jisiknarae.com
             </a>
           </div>

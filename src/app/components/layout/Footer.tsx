@@ -21,19 +21,19 @@ export function Footer() {
           <div>
             <h4 className="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wider">사이트</h4>
             <ul className="space-y-3 text-sm text-gray-600">
-              <li><Link href="/" className="hover:text-indigo-600">홈</Link></li>
-              <li><Link href="/about" className="hover:text-indigo-600">사이트 소개</Link></li>
-              <li><Link href="/contact" className="hover:text-indigo-600">문의하기</Link></li>
-              <li><Link href="/category/content" className="hover:text-indigo-600">카테고리</Link></li>
+              <li><Link href="/" className="hover:text-orange-600">홈</Link></li>
+              <li><Link href="/about" className="hover:text-orange-600">사이트 소개</Link></li>
+              <li><Link href="/contact" className="hover:text-orange-600">문의하기</Link></li>
+              <li><Link href="/category/content" className="hover:text-orange-600">카테고리</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold text-gray-900 mb-4 text-sm uppercase tracking-wider">법적 고지</h4>
             <ul className="space-y-3 text-sm text-gray-600">
-              <li><Link href="/privacy-policy" className="hover:text-indigo-600">개인정보처리방침</Link></li>
-              <li><Link href="/terms" className="hover:text-indigo-600">서비스 이용약관</Link></li>
-              <li><Link href="/cookies" className="hover:text-indigo-600">쿠키 정책</Link></li>
+              <li><Link href="/privacy-policy" className="hover:text-orange-600">개인정보처리방침</Link></li>
+              <li><Link href="/terms" className="hover:text-orange-600">서비스 이용약관</Link></li>
+              <li><Link href="/cookies" className="hover:text-orange-600">쿠키 정책</Link></li>
             </ul>
           </div>
         </div>

@@ -31,7 +31,7 @@ export function Header() {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-5xl">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 text-white w-8 h-8 rounded-lg font-bold text-lg flex items-center justify-center aspect-square">H</div>
+          <div className="bg-gradient-to-br from-orange-600 to-red-600 text-white w-8 h-8 rounded-lg font-bold text-lg flex items-center justify-center aspect-square">H</div>
           <span className="text-xl font-bold tracking-tight text-gray-900 hidden sm:block">하우로그</span>
         </Link>
 
@@ -42,7 +42,7 @@ export function Header() {
               key={cat.id}
               href={`/category/${cat.slug}`}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-indigo-600",
+                "text-sm font-medium transition-colors hover:text-orange-600",
                 isActive(cat.slug) ? "text-gray-900" : "text-gray-500"
               )}
             >
@@ -52,7 +52,7 @@ export function Header() {
           <Link
             href="/about"
             className={cn(
-              "text-sm font-medium transition-colors hover:text-indigo-600",
+              "text-sm font-medium transition-colors hover:text-orange-600",
               pathname === "/about" ? "text-gray-900" : "text-gray-500"
             )}
           >
@@ -61,7 +61,7 @@ export function Header() {
           <Link
             href="/contact"
             className={cn(
-              "text-sm font-medium transition-colors hover:text-indigo-600",
+              "text-sm font-medium transition-colors hover:text-orange-600",
               pathname === "/contact" ? "text-gray-900" : "text-gray-500"
             )}
           >

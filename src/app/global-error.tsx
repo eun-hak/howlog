@@ -34,7 +34,7 @@ export default function GlobalError({ error, reset }: GlobalErrorProps) {
             <div className="flex flex-col gap-4">
               <button
                 onClick={reset}
-                className="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                className="px-6 py-3 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
               >
                 다시 시도
               </button>

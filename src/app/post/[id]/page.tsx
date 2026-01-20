@@ -114,9 +114,9 @@ export default async function PostDetailPage({ params }: PageProps) {
             <nav className="bg-gray-50 border-b border-gray-100" aria-label="Breadcrumb">
                 <div className="container mx-auto px-4 max-w-5xl py-2.5">
                     <div className="flex items-center text-xs sm:text-sm text-gray-500 overflow-x-auto whitespace-nowrap">
-                        <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+                        <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
                         <ChevronRight className="h-3 w-3 mx-1 flex-shrink-0" />
-                        <Link href={`/category/${post.category}`} className="hover:text-indigo-600 cursor-pointer">
+                        <Link href={`/category/${post.category}`} className="hover:text-orange-600 cursor-pointer">
                             {category?.name || post.category}
                         </Link>
                         <ChevronRight className="h-3 w-3 mx-1 flex-shrink-0" />
@@ -132,7 +132,7 @@ export default async function PostDetailPage({ params }: PageProps) {
                     <header className="mb-5 text-center md:text-left">
                         <div className="mb-2.5 flex flex-wrap gap-1.5 items-center justify-center md:justify-start text-xs">
                             <Link href={`/category/${post.category}`}>
-                                <Badge className="bg-indigo-100 text-indigo-800 hover:bg-indigo-200 cursor-pointer text-xs px-2 py-0.5">
+                                <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200 cursor-pointer text-xs px-2 py-0.5">
                                     {category?.name}
                                 </Badge>
                             </Link>
@@ -180,7 +180,7 @@ export default async function PostDetailPage({ params }: PageProps) {
                             [&_ol]:my-3 [&_ol]:ml-5 [&_ol]:list-decimal [&_ol]:space-y-1.5
                             [&_li]:text-sm md:[&_li]:text-base [&_li]:text-gray-700 [&_li]:leading-relaxed
                             [&_strong]:font-semibold [&_strong]:text-gray-900
-                            [&_a]:text-indigo-600 [&_a]:no-underline hover:[&_a]:underline">
+                            [&_a]:text-orange-600 [&_a]:no-underline hover:[&_a]:underline">
                             <div dangerouslySetInnerHTML={{ __html: post.content }} />
                         </div>
                     </section>
@@ -235,7 +235,7 @@ export default async function PostDetailPage({ params }: PageProps) {
                             {relatedPosts.slice(0, 3).map(p => (
                                 <Link key={p.id} href={`/post/${p.id}`}>
                                     <div className="group cursor-pointer">
-                                        <h4 className="text-xs font-medium text-gray-900 group-hover:text-indigo-600 leading-snug mb-1">{p.title}</h4>
+                                        <h4 className="text-xs font-medium text-gray-900 group-hover:text-orange-600 leading-snug mb-1">{p.title}</h4>
                                         <span className="text-xs text-gray-400">{p.date}</span>
                                     </div>
                                 </Link>

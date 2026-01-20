@@ -26,8 +26,8 @@ export default function Home() {
             {/* Hero Section */}
             <section className="py-16 md:py-24 text-center space-y-6 max-w-2xl mx-auto px-4">
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900">
-                    유용한 <span className="text-indigo-600">정보</span>를<br />
-                    <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">한 곳에서</span>
+                    유용한 <span className="text-orange-600">정보</span>를<br />
+                    <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">한 곳에서</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
                     실용적인 가이드와 노하우부터 전문적인 리뷰까지<br />
@@ -35,7 +35,7 @@ export default function Home() {
                 </p>
                 <div className="flex justify-center gap-4 pt-4">
                     <Link href="/category/content">
-                        <Button size="lg" className="rounded-full px-8 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700">
+                        <Button size="lg" className="rounded-full px-8 bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700">
                             콘텐츠 둘러보기
                         </Button>
                     </Link>
@@ -46,7 +46,7 @@ export default function Home() {
             <section className="container mx-auto px-4 max-w-5xl">
                 <div className="flex items-center justify-between mb-8">
                     <h2 className="text-2xl font-bold tracking-tight text-gray-900">추천 콘텐츠</h2>
-                    <Button variant="link" className="text-indigo-600 hidden sm:flex">전체 보기 <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                    <Button variant="link" className="text-orange-600 hidden sm:flex">전체 보기 <ArrowRight className="ml-2 h-4 w-4" /></Button>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {featuredPosts.map(post => (

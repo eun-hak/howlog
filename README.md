@@ -94,14 +94,14 @@ npm start
 - **의미**: How(방법) + Log(기록)
 
 ### 컬러
-- **Primary**: Indigo (#4F46E5)
-- **Secondary**: Purple (#9333EA)
-- **Gradient**: from-indigo-600 to-purple-600
+- **Primary**: Orange (#EA580C)
+- **Secondary**: Red (#DC2626)
+- **Gradient**: from-orange-600 to-red-600
 
 ### 로고
 - 문자: "H" (HowLog의 첫 글자)
 - 형태: 둥근 사각형 배경
-- 그라데이션: Indigo에서 Purple로
+- 그라데이션: Orange에서 Red로
 
 ## 성능 최적화
 

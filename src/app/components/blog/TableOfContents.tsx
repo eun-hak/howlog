@@ -109,7 +109,7 @@ export function TableOfContents({ content }: TableOfContentsProps) {
             className={cn(
               'pl-2 border-l-2 transition-colors cursor-pointer',
               activeId === item.id
-                ? 'border-indigo-500 text-indigo-700 font-medium'
+                ? 'border-orange-500 text-orange-700 font-medium'
                 : 'border-transparent hover:border-gray-300'
             )}
             style={{ paddingLeft: item.level === 3 ? '1rem' : '0.5rem' }}
@@ -117,7 +117,7 @@ export function TableOfContents({ content }: TableOfContentsProps) {
             <a
               href={`#${item.id}`}
               onClick={(e) => handleClick(e, item.id)}
-              className="block hover:text-indigo-600 transition-colors"
+              className="block hover:text-orange-600 transition-colors"
             >
               {item.text}
             </a>

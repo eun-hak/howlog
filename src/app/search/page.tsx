@@ -41,7 +41,7 @@ export default function SearchPage() {
       {/* Breadcrumb */}
       <div className="mb-8">
         <div className="flex items-center text-sm text-gray-500">
-          <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+          <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
           <ChevronRight className="h-4 w-4 mx-1" />
           <span className="font-medium text-gray-900">검색</span>
         </div>
@@ -63,14 +63,14 @@ export default function SearchPage() {
             placeholder="제목, 내용, 태그로 검색..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-12 h-14 text-lg bg-white border-2 border-gray-200 focus:border-indigo-500"
+            className="pl-12 h-14 text-lg bg-white border-2 border-gray-200 focus:border-orange-500"
             autoFocus
           />
         </div>
         {searchQuery.trim() && (
           <p className="mt-4 text-gray-600">
             <span className="font-semibold">&quot;{searchQuery}&quot;</span>에 대한 검색 결과: 
-            <span className="ml-2 text-indigo-600 font-bold">{filteredPosts.length}개</span>
+            <span className="ml-2 text-orange-600 font-bold">{filteredPosts.length}개</span>
           </p>
         )}
       </div>
@@ -98,7 +98,7 @@ export default function SearchPage() {
                 <Badge 
                   key={keyword}
                   variant="secondary"
-                  className="cursor-pointer hover:bg-indigo-100"
+                  className="cursor-pointer hover:bg-orange-100"
                   onClick={() => setSearchQuery(keyword)}
                 >
                   {keyword}
@@ -122,7 +122,7 @@ export default function SearchPage() {
               <Badge 
                 key={keyword}
                 variant="secondary"
-                className="cursor-pointer hover:bg-indigo-100"
+                className="cursor-pointer hover:bg-orange-100"
                 onClick={() => setSearchQuery(keyword)}
               >
                 {keyword}
@@ -137,7 +137,7 @@ export default function SearchPage() {
         <h2 className="text-2xl font-bold text-gray-900 mb-6">카테고리로 찾아보기</h2>
         <div className="flex justify-center max-w-2xl mx-auto">
           <Link href="/category/content">
-            <div className="p-4 border border-gray-200 rounded-lg hover:border-indigo-300 hover:bg-indigo-50 transition-colors cursor-pointer text-center w-48">
+            <div className="p-4 border border-gray-200 rounded-lg hover:border-orange-300 hover:bg-orange-50 transition-colors cursor-pointer text-center w-48">
               <h3 className="font-semibold text-gray-900">가이드</h3>
             </div>
           </Link>

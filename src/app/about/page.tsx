@@ -18,7 +18,7 @@ export default function AboutPage() {
       {/* Breadcrumb */}
       <div className="mb-8">
         <div className="flex items-center text-sm text-gray-500">
-          <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+          <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
           <ChevronRight className="h-4 w-4 mx-1" />
           <span className="font-medium text-gray-900">사이트 소개</span>
         </div>
@@ -33,8 +33,8 @@ export default function AboutPage() {
         {/* Mission Section */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-indigo-100 p-3 rounded-lg">
-              <Target className="h-6 w-6 text-indigo-600" />
+            <div className="bg-orange-100 p-3 rounded-lg">
+              <Target className="h-6 w-6 text-orange-600" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 m-0">우리의 미션</h2>
           </div>
@@ -51,15 +51,15 @@ export default function AboutPage() {
         {/* What We Provide */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
-            <div className="bg-purple-100 p-3 rounded-lg">
-              <BookOpen className="h-6 w-6 text-purple-600" />
+            <div className="bg-red-100 p-3 rounded-lg">
+              <BookOpen className="h-6 w-6 text-red-600" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 m-0">제공하는 콘텐츠</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border border-indigo-100">
-              <h3 className="text-xl font-bold text-indigo-900 mb-3">기술 가이드</h3>
+            <div className="bg-gradient-to-br from-orange-50 to-red-50 p-6 rounded-lg border border-orange-100">
+              <h3 className="text-xl font-bold text-orange-900 mb-3">기술 가이드</h3>
               <p className="text-gray-700 text-base leading-relaxed">
                 프로그래밍, 도구 활용, 웹 개발 등 기술 관련 실용적인 가이드를 제공합니다. 
                 초보자부터 중급자까지 단계별로 따라할 수 있는 튜토리얼을 작성합니다.
@@ -102,7 +102,7 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-4">
-            <div className="border-l-4 border-indigo-600 pl-4 py-2">
+            <div className="border-l-4 border-orange-600 pl-4 py-2">
               <h3 className="text-lg font-bold text-gray-900 mb-2">1. 실용성과 정확성</h3>
               <p className="text-gray-700 leading-relaxed">
                 모든 가이드는 실제로 검증된 방법만을 담습니다. 직접 테스트하고 확인한 내용만을 
@@ -110,7 +110,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="border-l-4 border-purple-600 pl-4 py-2">
+            <div className="border-l-4 border-red-600 pl-4 py-2">
               <h3 className="text-lg font-bold text-gray-900 mb-2">2. 명확한 설명</h3>
               <p className="text-gray-700 leading-relaxed">
                 복잡한 내용도 누구나 이해할 수 있도록 쉽게 풀어 설명합니다. 
@@ -166,7 +166,7 @@ export default function AboutPage() {
         {/* Values */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">핵심 가치</h2>
-          <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-xl border border-indigo-200">
+          <div className="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-xl border border-orange-200">
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <span className="text-2xl">📝</span>
@@ -202,15 +202,15 @@ export default function AboutPage() {
 
         {/* Contact CTA */}
         <section className="mb-8">
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-xl">
+          <div className="bg-gradient-to-r from-orange-600 to-red-600 text-white p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-3">함께 지식을 나누고 싶으신가요?</h2>
-            <p className="mb-6 text-indigo-100">
+            <p className="mb-6 text-orange-100">
               콘텐츠에 대한 의견, 제안, 협업 문의 등 언제든 환영합니다. 
               더 많은 사람들과 유용한 정보를 공유하고 싶은 분들의 연락을 기다립니다.
             </p>
             <Link 
               href="/contact" 
-              className="inline-block bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors no-underline"
+              className="inline-block bg-white text-orange-600 px-6 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors no-underline"
             >
               문의하기 →
             </Link>
@@ -225,7 +225,7 @@ export default function AboutPage() {
           </p>
           <p>
             기술이나 도구는 업데이트에 따라 변경될 수 있으며, 정보의 정확성을 위해 최선을 다하고 있으나 
-            일부 내용이 최신 버전과 다를 수 있습니다. 오류를 발견하신 경우 <Link href="/contact" className="text-indigo-600 underline">문의하기</Link>를 통해 알려주시면 감사하겠습니다.
+            일부 내용이 최신 버전과 다를 수 있습니다. 오류를 발견하신 경우 <Link href="/contact" className="text-orange-600 underline">문의하기</Link>를 통해 알려주시면 감사하겠습니다.
           </p>
         </section>
       </article>

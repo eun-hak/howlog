@@ -24,10 +24,10 @@ export function PostCard({ post, variant = 'default', className }: PostCardProps
           className={cn("group cursor-pointer py-4 border-b border-gray-100 last:border-0 hover:bg-gray-50/50 transition-colors px-2 rounded-sm", className)}
         >
           <div className="flex items-baseline gap-2 mb-1">
-            <span className="text-xs font-semibold text-indigo-600 uppercase tracking-wide">{category?.name}</span>
+            <span className="text-xs font-semibold text-orange-600 uppercase tracking-wide">{category?.name}</span>
             <span className="text-xs text-gray-400">{post.date}</span>
           </div>
-          <h3 className="text-base font-medium text-gray-900 group-hover:text-indigo-700 transition-colors line-clamp-2">
+          <h3 className="text-base font-medium text-gray-900 group-hover:text-orange-700 transition-colors line-clamp-2">
             {post.title}
           </h3>
         </div>
@@ -42,7 +42,7 @@ export function PostCard({ post, variant = 'default', className }: PostCardProps
       >
         <CardContent className="p-4 sm:p-6">
           <div className="flex items-center gap-3 mb-3">
-            <Badge variant="secondary" className="bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-normal rounded-md px-2 py-0.5">
+            <Badge variant="secondary" className="bg-orange-50 text-orange-700 hover:bg-orange-100 font-normal rounded-md px-2 py-0.5">
               {category?.name || post.category}
             </Badge>
             <div className="flex items-center text-xs text-gray-400 gap-3">
@@ -51,7 +51,7 @@ export function PostCard({ post, variant = 'default', className }: PostCardProps
             </div>
           </div>
 
-          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 leading-snug group-hover:text-indigo-700">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 leading-snug group-hover:text-orange-700">
             {post.title}
           </h3>
 

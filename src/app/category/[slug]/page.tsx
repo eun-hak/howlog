@@ -58,7 +58,7 @@ export default async function CategoryPage({ params }: PageProps) {
     return (
         <div className="container mx-auto px-4 max-w-5xl py-12">
             <div className="mb-4 flex items-center text-sm text-gray-500">
-                <Link href="/" className="hover:text-indigo-600 cursor-pointer">홈</Link>
+                <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
                 <ChevronRight className="h-4 w-4 mx-1" />
                 <span className="font-medium text-gray-900">{category.name}</span>
             </div>
