@@ -93,8 +93,8 @@ export default function RootLayout({
                 <link rel="icon" href="/icon.svg" type="image/svg+xml" sizes="192x192" />
                 <link rel="apple-touch-icon" href="/apple-icon.svg" sizes="180x180" />
                 <link rel="manifest" href="/site.webmanifest" />
-                <meta name="theme-color" content="#4F46E5" />
-                <meta name="msapplication-TileColor" content="#4F46E5" />
+                <meta name="theme-color" content="#EA580C" />
+                <meta name="msapplication-TileColor" content="#EA580C" />
                 <meta name="msapplication-TileImage" content="/icon.svg" />
                 
                 {/* Google AdSense - head에 직접 삽입 (애드센스 요구사항) */}

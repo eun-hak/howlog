@@ -17,7 +17,7 @@ function getEnvVar(key: string, defaultValue?: string): string {
 
 export const env = {
   // 사이트 URL
-  siteUrl: getEnvVar('NEXT_PUBLIC_SITE_URL', 'http://localhost:3000'),
+  siteUrl: getEnvVar('NEXT_PUBLIC_SITE_URL', 'https://howlog.jisiknarae.com'),
   
   // 개발 모드 여부
   isDevelopment: process.env.NODE_ENV === 'development',
