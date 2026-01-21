@@ -60,9 +60,9 @@ export const metadata = {
         },
     },
     verification: {
-        google: 'nGLC6wqeingyxdWpDtTR9DKlBw7TNDT9A8_l8PrHWt0',
+        google: 'OkmGvofVfy3Ovq0Gc37sZSscUqUoKXzQL6NPggxUV_Y',
         other: {
-            'naver-site-verification': '094139038ce6770db27aa5907e4d187026f34334',
+            'naver-site-verification': '179a8bfe3e50234694e5d71f27a02db527f879d7',
         },
     },
     icons: {
@@ -84,7 +84,8 @@ export default function RootLayout({
     return (
         <html lang="ko" suppressHydrationWarning>
             <head>
-                <meta name="naver-site-verification" content="094139038ce6770db27aa5907e4d187026f34334" />
+                <meta name="google-site-verification" content="OkmGvofVfy3Ovq0Gc37sZSscUqUoKXzQL6NPggxUV_Y" />
+                <meta name="naver-site-verification" content="179a8bfe3e50234694e5d71f27a02db527f879d7" />
                 <meta name="google-adsense-account" content="ca-pub-1410200096892996" />
                 
                 {/* 파비콘 - 검색엔진 최적화 (구글, 네이버) */}
@@ -108,7 +109,7 @@ export default function RootLayout({
                 
                 {/* Google Analytics */}
                 <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-ZCMSKGVQ2M"
+                    src="https://www.googletagmanager.com/gtag/js?id=G-LN2VGCZQ61"
                     strategy="afterInteractive"
                 />
                 <Script id="google-analytics" strategy="afterInteractive">
@@ -116,7 +117,7 @@ export default function RootLayout({
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', 'G-ZCMSKGVQ2M');
+                        gtag('config', 'G-LN2VGCZQ61');
                     `}
                 </Script>
                 
