@@ -168,7 +168,7 @@ Vercel 대시보드에서 다음 환경 변수를 설정하세요:
 
 ## 문의
 
-- **이메일**: contact@howlog.jisiknarae.com
+- **이메일**: plentyer.comp@gmail.com
 - **웹사이트**: https://howlog.jisiknarae.com
 
 ## 라이선스

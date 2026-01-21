@@ -34,7 +34,7 @@
 
 - [x] **Contact 페이지** (`/contact`)
   - 문의 폼 (이름, 이메일, 제목, 내용)
-  - 이메일 주소 공개 (contact@plentyer.com, privacy@plentyer.com, partner@plentyer.com)
+  - 이메일 주소 공개 (plentyer.comp@gmail.com)
   - 문의 유형 안내
   - 운영 시간 정보
   - 자주 묻는 질문

@@ -177,7 +177,7 @@ export default function CookiesPage() {
           </p>
           <div className="bg-gray-50 p-6 rounded-lg">
             <p className="text-gray-700">
-              <strong>이메일:</strong> contact@howlog.jisiknarae.com
+              <strong>이메일:</strong> plentyer.comp@gmail.com
             </p>
           </div>
         </section>

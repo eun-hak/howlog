@@ -358,7 +358,6 @@ export const POSTS: Post[] = [
     </ul>
     <p>그래서 같은 최저임금 인상이라도, 근무 형태에 따라 월 증가분은 다르게 느껴집니다.</p>
 
-    <img src="https://images.pexels.com/photos/4386378/pexels-photo-4386378.jpeg" alt="근로시간과 월급 환산" />
 
     <h3>3) 주휴수당 포함 여부가 체감을 크게 바꿉니다</h3>
     <p>연도별 최저임금을 비교할 때 가장 자주 놓치는 요소가 주휴수당입니다. 주휴수당이 포함되면 같은 시급이라도 실제 월 수입은 달라집니다.</p>
@@ -481,7 +480,6 @@ export const POSTS: Post[] = [
     </ul>
     <p>그래서 평균임금이 상승해도 많은 사람이 "체감이 없다"고 느끼는 반면, 중위임금은 현실과 비교적 잘 맞는 경우가 많습니다.</p>
 
-    <img src="https://images.pexels.com/photos/4386410/pexels-photo-4386410.jpeg" alt="평균과 중위의 차이" />
 
     <h3>3) 정부 제도에서 중위임금이 쓰이는 이유</h3>
     <p>중위임금은 여러 정부 정책과 지원 제도의 기준으로 활용됩니다. 이는 특정 계층만이 아니라, <strong>사회 전체의 상대적 위치</strong>를 판단하기에 적합하기 때문입니다.</p>
@@ -694,8 +692,6 @@ export const POSTS: Post[] = [
       <li>퇴직금·장기 보장이 있는지</li>
     </ul>
     <p>이 요소들이 합쳐져 실제 가처분소득과 생활 안정성을 결정합니다.</p>
-
-    <img src="https://images.pexels.com/photos/4386412/pexels-photo-4386412.jpeg" alt="수입 구조 비교" />
 
     <h3>5) 나에게 맞는 형태를 판단하는 질문</h3>
     <ul>
