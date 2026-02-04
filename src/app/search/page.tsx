@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import React, { useState, useMemo, useEffect } from 'react';
-import Link from 'next/link';
-import { useSearchParams, useRouter } from 'next/navigation';
-import { Search, ChevronRight } from 'lucide-react';
-import { Input } from '../components/ui/input';
-import { PostCard } from '../components/blog/PostCard';
-import { POSTS } from '../data/mock';
-import { Badge } from '../components/ui/badge';
+import React, { useState, useMemo, useEffect } from "react";
+import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
+import { Search, ChevronRight } from "lucide-react";
+import { Input } from "../components/ui/input";
+import { PostCard } from "../components/blog/PostCard";
+import { POSTS } from "../data/mock";
+import { Badge } from "../components/ui/badge";
 
 export default function SearchPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    const q = searchParams.get('q');
+    const q = searchParams.get("q");
     if (q) {
       setSearchQuery(q);
     }
@@ -26,14 +26,16 @@ export default function SearchPage() {
     if (!searchQuery.trim()) return [];
 
     const query = searchQuery.toLowerCase();
-    return POSTS.filter(post => {
+    return POSTS.filter((post) => {
       const titleMatch = post.title.toLowerCase().includes(query);
       const summaryMatch = post.summary.toLowerCase().includes(query);
-      const tagsMatch = post.tags?.some(tag => tag.toLowerCase().includes(query));
+      const tagsMatch = post.tags?.some((tag) =>
+        tag.toLowerCase().includes(query)
+      );
       const contentMatch = post.content.toLowerCase().includes(query);
-      
+
       return titleMatch || summaryMatch || tagsMatch || contentMatch;
-    });
+    }).sort((a, b) => b.date.localeCompare(a.date));
   }, [searchQuery]);
 
   return (
@@ -41,7 +43,9 @@ export default function SearchPage() {
       {/* Breadcrumb */}
       <div className="mb-8">
         <div className="flex items-center text-sm text-gray-500">
-          <Link href="/" className="hover:text-orange-600 cursor-pointer">홈</Link>
+          <Link href="/" className="hover:text-orange-600 cursor-pointer">
+            홈
+          </Link>
           <ChevronRight className="h-4 w-4 mx-1" />
           <span className="font-medium text-gray-900">검색</span>
         </div>
@@ -69,8 +73,11 @@ export default function SearchPage() {
         </div>
         {searchQuery.trim() && (
           <p className="mt-4 text-gray-600">
-            <span className="font-semibold">&quot;{searchQuery}&quot;</span>에 대한 검색 결과: 
-            <span className="ml-2 text-orange-600 font-bold">{filteredPosts.length}개</span>
+            <span className="font-semibold">&quot;{searchQuery}&quot;</span>에
+            대한 검색 결과:
+            <span className="ml-2 text-orange-600 font-bold">
+              {filteredPosts.length}개
+            </span>
           </p>
         )}
       </div>
@@ -79,7 +86,7 @@ export default function SearchPage() {
       {searchQuery.trim() ? (
         filteredPosts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPosts.map(post => (
+            {filteredPosts.map((post) => (
               <PostCard key={post.id} post={post} />
             ))}
           </div>
@@ -88,22 +95,26 @@ export default function SearchPage() {
             <div className="mb-4">
               <Search className="h-16 w-16 text-gray-300 mx-auto" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">검색 결과가 없습니다</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              검색 결과가 없습니다
+            </h3>
             <p className="text-gray-600 mb-6">
               다른 키워드로 다시 검색해보세요
             </p>
             <div className="flex flex-wrap gap-2 justify-center">
               <span className="text-sm text-gray-500">추천 키워드:</span>
-              {['가이드', '튜토리얼', '전략', '리뷰', '초보자'].map(keyword => (
-                <Badge 
-                  key={keyword}
-                  variant="secondary"
-                  className="cursor-pointer hover:bg-orange-100"
-                  onClick={() => setSearchQuery(keyword)}
-                >
-                  {keyword}
-                </Badge>
-              ))}
+              {["가이드", "튜토리얼", "전략", "리뷰", "초보자"].map(
+                (keyword) => (
+                  <Badge
+                    key={keyword}
+                    variant="secondary"
+                    className="cursor-pointer hover:bg-orange-100"
+                    onClick={() => setSearchQuery(keyword)}
+                  >
+                    {keyword}
+                  </Badge>
+                )
+              )}
             </div>
           </div>
         )
@@ -112,29 +123,35 @@ export default function SearchPage() {
           <div className="mb-4">
             <Search className="h-16 w-16 text-gray-300 mx-auto" />
           </div>
-          <h3 className="text-xl font-bold text-gray-900 mb-2">검색어를 입력하세요</h3>
+          <h3 className="text-xl font-bold text-gray-900 mb-2">
+            검색어를 입력하세요
+          </h3>
           <p className="text-gray-600 mb-6">
             제목, 내용, 태그로 원하는 게시글을 찾을 수 있습니다
           </p>
           <div className="flex flex-wrap gap-2 justify-center">
             <span className="text-sm text-gray-500">인기 검색어:</span>
-            {['초보자 가이드', '실전 노하우', '리뷰', '튜토리얼', '팁'].map(keyword => (
-              <Badge 
-                key={keyword}
-                variant="secondary"
-                className="cursor-pointer hover:bg-orange-100"
-                onClick={() => setSearchQuery(keyword)}
-              >
-                {keyword}
-              </Badge>
-            ))}
+            {["초보자 가이드", "실전 노하우", "리뷰", "튜토리얼", "팁"].map(
+              (keyword) => (
+                <Badge
+                  key={keyword}
+                  variant="secondary"
+                  className="cursor-pointer hover:bg-orange-100"
+                  onClick={() => setSearchQuery(keyword)}
+                >
+                  {keyword}
+                </Badge>
+              )
+            )}
           </div>
         </div>
       )}
 
       {/* 전체 카테고리 링크 */}
       <div className="mt-16 pt-16 border-t border-gray-200">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">카테고리로 찾아보기</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          카테고리로 찾아보기
+        </h2>
         <div className="flex justify-center max-w-2xl mx-auto">
           <Link href="/category/content">
             <div className="p-4 border border-gray-200 rounded-lg hover:border-orange-300 hover:bg-orange-50 transition-colors cursor-pointer text-center w-48">
