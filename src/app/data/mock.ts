@@ -26,7 +26,7 @@ export const CATEGORIES: Category[] = [
     name: "콘텐츠",
     slug: "content",
     description: "유용한 정보와 실용적인 콘텐츠를 제공합니다.",
-    count: 24,
+    count: 25,
   },
 ];
 
@@ -1601,7 +1601,7 @@ export const POSTS: Post[] = [
     <p>노후 생활비 계산이 계속 불안한 이유는 숫자가 틀려서가 아니라, 현실과 어긋난 가정 위에 쌓여 있기 때문입니다. 착각을 하나씩 걷어내면 계산은 오히려 단순해집니다. 다음 글에서는 이 착각들을 피하면서, 생활 기준에 맞게 생활비를 다시 구성하는 방법을 단계별로 정리해보겠습니다.</p>
   `,
     category: "content",
-    date: "2026-02-06",
+    date: "2026-01-31",
     slug: "retirement-living-cost-mistakes",
     views: 0,
     tags: ["노후설계", "생활비계산", "재무착각", "은퇴준비", "생활비관리"],
